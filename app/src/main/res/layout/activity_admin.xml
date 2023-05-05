@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="30sp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="todo"
+        android:src="@drawable/mlimi_logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <Button
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="See new Jobs"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|normal"
+        app:backgroundTint="#0C9F12"
+        app:shapeAppearanceOverlay="@style/Button8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <com.agrawalsuneet.dotsloader.loaders.CircularDotsLoader
+            android:id="@+id/cirLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:loader_animDur="100"
+            app:loader_bigCircleRadius="42dp"
+            app:loader_circleRadius="11dp"
+            app:loader_defaultColor="@color/colorGreen"
+            app:loader_firstShadowColor="@color/colorGreen"
+            app:loader_secondShadowColor="@color/colorGreen"
+            app:loader_selectedColor="@color/colorGreen"
+            app:loader_showRunningShadow="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

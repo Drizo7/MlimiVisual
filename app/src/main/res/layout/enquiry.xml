@@ -1,0 +1,140 @@
+<LinearLayout
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_about_1"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="bottom"
+            android:padding="9dp"
+            android:text="Enquiry"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        tools:ignore="UselessLeaf">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".86"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:fontFamily="serif"
+            android:text="Phone"
+            android:textColor="#ffffff"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            tools:ignore="NestedWeights" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="0dp"
+            android:layout_weight="0.14"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_launcher_foreground"
+            android:contentDescription="callButton"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".86"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:text="EMAIL"
+            android:textColor="#ffffff"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            tools:ignore="NestedWeights" />
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_weight="0.14"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_launcher_foreground"
+            android:contentDescription="mailId"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".08"
+        tools:ignore="UselessLeaf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        >
+        <TextView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:text="Open_MlimiApp"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:fontFamily="serif"
+            android:paddingEnd="0dp"
+            tools:ignore="NestedWeights"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "64647849497",
+    "firebase_url": "https://mlimivisual-default-rtdb.firebaseio.com",
+    "project_id": "mlimivisual",
+    "storage_bucket": "mlimivisual.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64647849497:android:21ab0de42821fbcc26ec88",
+        "android_client_info": {
+          "package_name": "com.adz.mlimivisual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64647849497-jphfp67lmi2pm3as6e8p0bmm1unqc6d6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adz.mlimivisual",
+            "certificate_hash": "3575e124e379e3c6960392b8370c36ed40cbce3c"
+          }
+        },
+        {
+          "client_id": "64647849497-nvm7ruu85m6tjacgq2buf9fkdc2ofpcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnM6R06fMiFs520sA7cu22S3wCrZcIDS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64647849497-nvm7ruu85m6tjacgq2buf9fkdc2ofpcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

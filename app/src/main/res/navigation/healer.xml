@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/healer.xml"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.adz.mlimivisual.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_GetUserNumberFragment"
+            app:destination="@id/GetUserNumberFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_StartFragment"
+            app:destination="@id/StartFragment" />
+        <action
+            android:id="@+id/action_EndFragment_to_SummaryFragment"
+            app:destination="@id/SummaryFragment" />
+        <action
+            android:id="@+id/action_SummaryFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_EndFragment"
+            app:destination="@id/EndFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_EndFragment"
+            app:destination="@id/EndFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ContactUsFragment"
+            app:destination="@id/ContactUsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_FlavorFragment"
+            app:destination="@id/FlavorFragment" />
+        <action
+            android:id="@+id/action_FlavorFragment_to_SummaryFragment"
+            app:destination="@id/SummaryFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.adz.mlimivisual.fragments.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"
+    >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_verifyFragment"
+            app:destination="@id/verifyFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_FCountries"
+            app:destination="@id/FCountries" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FCountries"
+        android:name="com.adz.mlimivisual.fragments.countries.FCountries"
+        android:label="FCountries"
+        tools:layout="@layout/f_countries">
+        <action
+            android:id="@+id/action_FCountries_to_FLogIn"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyFragment"
+        android:name="com.adz.mlimivisual.fragments.login.VerifyFragment"
+        android:label="VerifyFragment"
+        tools:layout="@layout/fragment_verify"
+    >
+        <action
+            android:id="@+id/action_verifyFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_verifyFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_verifyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_verifyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_verifyFragment_to_getUserDataFragment"
+            app:destination="@id/getUserDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getUserDataFragment"
+        android:name="com.adz.mlimivisual.fragments.GetUserData"
+        android:label="GetUserData"
+        tools:layout="@layout/fragment_get_user_data">
+
+        <action
+            android:id="@+id/action_getUserDataFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.adz.mlimivisual.fragments.ContactFragment"
+        android:label="ContactFragment"
+        tools:layout="@layout/fragment_contact">
+        <action
+            android:id="@+id/action_contactFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.adz.mlimivisual.fragments.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_chatFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.adz.mlimivisual.fragments.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GetUserNumberFragment"
+        android:name="com.adz.mlimivisual.fragments.login.GetUserNumber"
+        android:label="GetUserNumber"
+        tools:layout="@layout/fragment_get_user_number">
+
+        <action
+            android:id="@+id/action_GetUserNumberFragment_to_VerifiyNumberFragment"
+            app:destination="@id/VerifiyNumberFragment" />
+        <action
+            android:id="@+id/action_GetUserNumberFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/VerifiyNumberFragment"
+        android:name="com.adz.mlimivisual.fragments.login.VerifiyNumber"
+        android:label="VerifiyNumber"
+        tools:layout="@layout/fragment_verifiy_number">
+
+        <action
+            android:id="@+id/action_VerifiyNumberFragment_to_GetUserNumberFragment"
+            app:destination="@id/GetUserNumberFragment" />
+        <action
+            android:id="@+id/action_VerifiyNumberFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_VerifiyNumberFragment_to_getUserDataFragment"
+            app:destination="@id/getUserDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/StartFragment"
+        android:name="com.adz.mlimivisual.fragments.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start">
+
+        <action
+            android:id="@+id/action_StartFragment_to_EndFragment"
+            app:destination="@id/EndFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FlavorFragment"
+        android:name="com.adz.mlimivisual.fragments.FlavorFragment"
+        android:label="FlavorFragment"
+        tools:layout="@layout/fragment_flavor">
+
+        <action
+            android:id="@+id/action_FlavorFragment_to_SummaryFragment"
+            app:destination="@id/SummaryFragment" />
+        <action
+            android:id="@+id/action_FlavorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EndFragment"
+        android:name="com.adz.mlimivisual.fragments.EndFragment"
+        android:label="EndFragment"
+        tools:layout="@layout/fragment_end">
+
+
+        <action
+            android:id="@+id/action_EndFragment_to_SummaryFragment"
+            app:destination="@id/SummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SummaryFragment"
+        android:name="com.adz.mlimivisual.fragments.SummaryFragment"
+        android:label="SummaryFragment"
+        tools:layout="@layout/fragment_summary">
+        <action
+            android:id="@+id/action_SummaryFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_SummaryFragment_to_FlavorFragment"
+            app:destination="@id/FlavorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ContactUsFragment"
+        android:name="com.adz.mlimivisual.fragments.ContactUsFragment"
+        android:label="ContactUsFragment"
+        tools:layout="@layout/fragment_contact_us">
+        <action
+            android:id="@+id/action_ContactUsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>
